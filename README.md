@@ -1,7 +1,8 @@
 awesome-cookie
 ==============
 
-A tiny script that takes care of all the cookie related problems in JavaScript
+A tiny script that takes care of all the cookie related problems in JavaScript.
+Read about the motivation behind this script [here](http://thealjey.tumblr.com/javascript-cookies).
 
 ```javascript
 /** Usage example */
