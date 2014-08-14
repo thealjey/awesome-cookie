@@ -8,7 +8,7 @@ var Cookie = (function () {
   function set(n, v, d) {
     var e = new Date;
     d && e.setDate(e.getDate() + d);
-    document.cookie = [n, '=', v, ';expires=', e, p].join('');
+    document.cookie = [n, '=', v, ';expires=', e.toUTCString(), p].join('');
   }
   return {
     get: function (n) { return (n = (document.cookie + ';').match(new RegExp(n + '=.*;'))) && n[0].split(r)[1] },
